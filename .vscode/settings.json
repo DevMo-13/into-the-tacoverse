@@ -1,0 +1,26 @@
+{
+    "editor.formatOnSave": true,
+    "editor.minimap.maxColumn": 120,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [120],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.formatOnPaste": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4
+}

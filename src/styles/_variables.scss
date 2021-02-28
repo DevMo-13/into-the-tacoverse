@@ -5,27 +5,27 @@ $titleFont: 'Bangers', cursive;
 $bodyFont: 'Montserrat', sans-serif;
 
 // Main App Colors
-$blue: #00477A;
+$blue: #00477a;
 $aqua: #007991;
-$teal: #439A86;
-$sage: #BCD8C1;
-$yellow: #E9D985;
-$orange: #D2694B;
-$red: #891A1C;
+$green: #6f8c17;
+$sage: #bcd8c1;
+$yellow: #e9d985;
+$orange: #e09515;
+$red: #891a1c;
 
 // Other App Colors
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
-$lightGray: #CED4DA;
-$mediumGray: #ADB5BD;
+$lightGray: #ced4da;
+$mediumGray: #adb5bd;
 $darkGray: #495057;
 
 // Box Shadow
-$boxShadow: 0 5px 25px rgba(0,0,0,.05), 0 1px 5px rgba(0,0,0,.2);
+$boxShadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2);
 
 @mixin flexCenter($direction) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: $direction;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
 }
