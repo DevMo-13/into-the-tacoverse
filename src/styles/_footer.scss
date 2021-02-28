@@ -1,13 +1,15 @@
 // CSS for the Footer
 
 footer {
-	@include flexCenter(column);
-	background-color: $lightGray;
-	box-shadow: $boxShadow;
+    @include flexCenter(column);
+    background-color: $blue;
+    height: 75px;
+    min-height: 75px;
+    box-shadow: $boxShadow;
 
-	.footerText {
-		font-weight: bolder;
-		color: $orange;
-		text-shadow: $orange .2px .2px .2px;
-	}
+    .footerText {
+        font-weight: bolder;
+        color: $white;
+		text-align: center;
+    }
 }
