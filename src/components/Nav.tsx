@@ -8,7 +8,7 @@ function Nav() {
             <nav>
                 <a
                     href="/"
-                    target="_blank"
+                    // target="_blank"
                     rel="noreferrer"
                     aria-label="homepage"
                 >

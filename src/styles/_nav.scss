@@ -2,11 +2,11 @@
 
 nav {
     @include flexCenter(row);
-    position: fixed;
+    // position: fixed;
     background-color: $blue;
     top: 0;
     margin: 0;
-    height: 100px;
+    height: 150px;
     min-height: 100px;
     width: 100%;
     padding: 15px 50px 15px 50px;

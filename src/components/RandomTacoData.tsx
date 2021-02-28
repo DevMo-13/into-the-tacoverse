@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Taco from './Taco';
+import TacoLoco from './TacoLoco';
 
 interface TacoResponse {
     base_layer: {
@@ -41,8 +41,7 @@ function RandomTacoData() {
     // @ts-ignore
     const [tacoData, setTacoData] = useState<TacoResponse>({});
 
-    const randomTacoURL =
-        'http://taco-randomizer.herokuapp.com/random/';
+    const randomTacoURL = 'http://taco-randomizer.herokuapp.com/random/';
 
     const getRandomTaco = () => {
         axios
@@ -63,7 +62,7 @@ function RandomTacoData() {
 
     return (
         <>
-            <Taco tacoData={tacoData} />
+            <TacoLoco tacoData={tacoData} />
         </>
     );
 }

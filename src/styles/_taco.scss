@@ -1,15 +1,27 @@
 // CSS for the NavBar
 
-.taco {
-    @include flexCenter(row);
-    background-color: $lightGray;
+.tacoLoco {
+    // @include flexCenter(row);
+    background-color: $white;
     top: 0;
     margin: 0;
-    height: 500px;
     width: 100%;
     padding: 15px 50px 15px 50px;
     display: flex;
-    box-shadow: $boxShadow;
+}
+
+.introText {
+    font-family: $bodyFont;
+    color: $green;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#loco {
+    font-family: $titleFont;
+    color: $green;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
 }
 
 li {
