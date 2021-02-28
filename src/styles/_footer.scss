@@ -1,0 +1,13 @@
+// CSS for the Footer
+
+footer {
+	@include flexCenter(column);
+	background-color: $lightGray;
+	box-shadow: $boxShadow;
+
+	.footerText {
+		font-weight: bolder;
+		color: $orange;
+		text-shadow: $orange .2px .2px .2px;
+	}
+}

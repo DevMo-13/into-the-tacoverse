@@ -1,0 +1,30 @@
+// CSS for the NavBar
+
+nav {
+	@include flexCenter(row);
+	position: fixed;
+	background-color: $blue;
+	top: 0;
+	margin: 0;
+	height: 15vh;
+	width: 100%;
+	padding: 15px 50px 15px 50px;
+	display: flex;
+	box-shadow: $boxShadow;
+
+	& a {
+		text-decoration: none;
+		
+		:hover {
+			color: $sage;
+		}
+	}
+}
+
+.title {
+	font-family: $titleFont;
+	color: $orange;
+	text-shadow: $white 2px 2px 2px;
+	font-size: 5rem;
+	letter-spacing: .7rem;
+}

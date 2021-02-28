@@ -1,0 +1,31 @@
+// CSS Variables and Mixins
+
+// Typography
+$titleFont: 'Bangers', cursive;
+$bodyFont: 'Montserrat', sans-serif;
+
+// Main App Colors
+$blue: #00477A;
+$aqua: #007991;
+$teal: #439A86;
+$sage: #BCD8C1;
+$yellow: #E9D985;
+$orange: #D2694B;
+$red: #891A1C;
+
+// Other App Colors
+$white: #FFFFFF;
+$black: #000000;
+$lightGray: #CED4DA;
+$mediumGray: #ADB5BD;
+$darkGray: #495057;
+
+// Box Shadow
+$boxShadow: 0 5px 25px rgba(0,0,0,.05), 0 1px 5px rgba(0,0,0,.2);
+
+@mixin flexCenter($direction) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}
