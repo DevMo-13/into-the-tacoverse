@@ -1,5 +1,3 @@
-# into-the-tacoverse
- 
 <p align='center'>
     <img alt='taco' src='https://github.com/DevMo-13/into-the-tacoverse/blob/main/taco.png' width='150' />
 </p>
