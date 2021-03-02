@@ -1,6 +1,7 @@
 // Component to render the random taco's info
 
 import React from 'react';
+import TacoImg from '../images/TacoImg';
 
 interface TacoResponse {
     base_layer: {
@@ -43,11 +44,15 @@ function TacoLoco({ tacoData }: Props) {
     return (
         <div className="tacoLoco">
             <div className="intro">
-                <p className="introText">
+                <p>
+                    Feeling a little loco?
+                    <br></br>
                     Try out a whole new twist on tacos by combining these unique
-                    recipes to make one <br></br>
+                    recipes to make one
+                    <br></br>
                     <span id="loco">Taco Loco!</span>
                 </p>
+                <TacoImg />
             </div>
             <div className="ingredients">
                 <ul>
@@ -55,8 +60,6 @@ function TacoLoco({ tacoData }: Props) {
                         <>
                             {/*  @ts-ignore */}
                             <li key={tacoData[part].name}>
-                                {/* @ts-ignore
-							<p className="name">{tacoData[part]}</p> */}
                                 {/*  @ts-ignore */}
                                 <p className="name">{tacoData[part].name}</p>
                                 <a

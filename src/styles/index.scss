@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;600&display=swap');
 @import './_variables';
 @import './_nav';
-@import './_taco';
+@import './_tacoloco';
 @import './_footer';
 
 * {
@@ -27,7 +27,9 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    @include flexCenter(column);
     min-height: 100vh;
+    background-color: $sage;
 }
 
 main {

@@ -1,20 +1,24 @@
-// CSS for the NavBar
+// CSS for the TacoLoco section
 
 .tacoLoco {
     // @include flexCenter(row);
     background-color: $white;
     top: 0;
-    margin: 0;
-    width: 100%;
-    padding: 15px 50px 15px 50px;
+    margin: auto;
+    width: 75%;
+    padding: 50px 50px 50px 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: $boxShadow;
 }
 
-.introText {
+.intro {
     font-family: $bodyFont;
     color: $green;
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.35rem;
+    text-align: center;
+    width: 50%;
 }
 
 #loco {
@@ -22,6 +26,15 @@
     color: $green;
     font-size: 3rem;
     letter-spacing: 0.1rem;
+}
+
+.tacoImg {
+    height: 150px;
+}
+
+ul {
+    padding-left: 0;
+    @include flexCenter(row);
 }
 
 li {
