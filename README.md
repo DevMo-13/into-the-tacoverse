@@ -3,7 +3,7 @@
 </p>
 
 <h1 align='center'>
-  	Into the Tacoverse
+  	INTO THE TACOVERSE
 </h1>
 
 <p align='center'>Taco recipes app using React, TypeScript, Sass, and Public APIs. Still a work in progress!</p>
