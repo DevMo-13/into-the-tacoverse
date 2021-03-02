@@ -5,7 +5,7 @@ import React from 'react';
 function Nav() {
     return (
         <>
-            <nav>
+            <nav className="nav">
                 <a
                     href="/"
                     // target="_blank"
