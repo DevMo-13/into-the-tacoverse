@@ -1,11 +1,10 @@
 // CSS for the TacoLoco section
 
 .tacoLoco {
-    // @include flexCenter(row);
     background-color: $white;
     top: 0;
     margin: auto;
-    width: 75%;
+    // width: 100%;
     padding: 50px 50px 50px 50px;
     display: flex;
     flex-direction: column;
@@ -19,12 +18,13 @@
     font-size: 1.35rem;
     text-align: center;
     width: 50%;
+    line-height: 25px;
 }
 
 #loco {
     font-family: $titleFont;
     color: $green;
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.1rem;
 }
 
@@ -33,12 +33,18 @@
 }
 
 ul {
-    padding-left: 0;
-    @include flexCenter(row);
+    align-self: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-column-gap: 10px;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 0;
 }
 
 li {
     list-style-type: none;
+    @include flexCenter(column);
 }
 
 .name {
@@ -46,11 +52,14 @@ li {
     color: $red;
     font-size: 2rem;
     letter-spacing: 0.1rem;
+    text-align: center;
+    min-height: 100px;
+    max-width: 200px;
+    margin-bottom: 0;
 }
 
-.recipeLink {
-    font-family: $bodyFont;
-    color: $black;
-    font-size: 1.25rem;
-    text-decoration: none;
+.recipeIcon {
+    width: 50px;
+    height: 50px;
+    color: $orange;
 }

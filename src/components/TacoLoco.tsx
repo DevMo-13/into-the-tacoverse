@@ -1,6 +1,7 @@
 // Component to render the random taco's info
 
 import React from 'react';
+import { RiFileList3Line } from 'react-icons/ri';
 import TacoImg from '../images/TacoImg';
 
 interface TacoResponse {
@@ -50,6 +51,7 @@ function TacoLoco({ tacoData }: Props) {
                     Try out a whole new twist on tacos by combining these unique
                     recipes to make one
                     <br></br>
+                    <br></br>
                     <span id="loco">Taco Loco!</span>
                 </p>
                 <TacoImg />
@@ -68,14 +70,14 @@ function TacoLoco({ tacoData }: Props) {
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="recipe"
-                                    className="recipeLink"
                                 >
-                                    Get the Recipe
+                                    <RiFileList3Line className="recipeIcon" />
                                 </a>
                             </li>
                         </>
                     ))}
                 </ul>
+                {/* <p>Prefer to try a different loco combo?</p> */}
             </div>
         </div>
     );
