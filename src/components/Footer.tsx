@@ -7,7 +7,7 @@ function Footer() {
         <>
             <footer>
                 <p className="footerText">
-                    • HANDCRAFTED BY MONIQUE CINATL &copy; 2021 • 
+                    • COOKED FROM SCRATCH BY MONIQUE CINATL &copy; 2021 •
                 </p>
             </footer>
         </>

@@ -57,11 +57,14 @@ function TacoLoco({ tacoData }: Props) {
                 <TacoImg />
             </div>
             <div className="ingredients">
-                <ul>
+                <ul className="ingredientsUl">
                     {Object.keys(tacoData).map((part: string) => (
                         <>
-                            {/*  @ts-ignore */}
-                            <li key={tacoData[part].name}>
+                            <li
+                                // @ts-ignore
+                                key={tacoData[part].name}
+                                className="ingredientLi"
+                            >
                                 {/*  @ts-ignore */}
                                 <p className="name">{tacoData[part].name}</p>
                                 <a
@@ -77,7 +80,6 @@ function TacoLoco({ tacoData }: Props) {
                         </>
                     ))}
                 </ul>
-                {/* <p>Prefer to try a different loco combo?</p> */}
             </div>
         </div>
     );

@@ -1,22 +1,22 @@
 // CSS for the TacoLoco section
 
 .tacoLoco {
+    @include flexCenter(column);
     background-color: $white;
     top: 0;
     margin: auto;
-    // width: 100%;
-    padding: 50px 50px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 65vw;
+    min-width: 150px;
+    max-width: 850px;
+    padding: 30px 50px 30px 50px;
     box-shadow: $boxShadow;
+    text-align: center;
 }
 
 .intro {
     font-family: $bodyFont;
     color: $green;
     font-size: 1.35rem;
-    text-align: center;
     width: 50%;
     line-height: 25px;
 }
@@ -29,10 +29,10 @@
 }
 
 .tacoImg {
-    height: 150px;
+    height: 175px;
 }
 
-ul {
+.ingredientsUl {
     align-self: center;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -42,7 +42,7 @@ ul {
     margin: 0;
 }
 
-li {
+.ingredientLi {
     list-style-type: none;
     @include flexCenter(column);
 }
@@ -52,7 +52,6 @@ li {
     color: $red;
     font-size: 2rem;
     letter-spacing: 0.1rem;
-    text-align: center;
     min-height: 100px;
     max-width: 200px;
     margin-bottom: 0;
@@ -62,4 +61,87 @@ li {
     width: 50px;
     height: 50px;
     color: $orange;
+    margin-top: 5px;
+}
+
+@media (max-width: 1025px) {
+    .tacoImg {
+        height: 150px;
+    }
+
+    .ingredientsUl {
+        align-self: center;
+        @include flexCenter(column);
+    }
+
+    .ingredientLi {
+        padding-bottom: 15px;
+    }
+
+    .name {
+        min-height: 0px;
+    }
+}
+
+@media (max-width: 770px) {
+    .tacoLoco {
+        width: 75vw;
+        padding: 15px 15px 15px 15px;
+    }
+
+    .intro {
+        font-size: 1.3rem;
+    }
+
+    #loco {
+        font-size: 3rem;
+        line-height: 30px;
+    }
+
+    .tacoImg {
+        height: 150px;
+    }
+
+    .ingredientLi {
+        padding-bottom: 10px;
+    }
+
+    .name {
+        font-size: 1.9rem;
+    }
+
+    .recipeIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tacoLoco {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    #loco {
+        line-height: 25px;
+    }
+
+    .tacoImg {
+        height: 100px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        min-width: 150px;
+        padding-bottom: 5px;
+    }
+
+    .recipeIcon {
+        width: 30px;
+        height: 30px;
+    }
 }

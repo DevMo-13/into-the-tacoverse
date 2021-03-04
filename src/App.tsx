@@ -1,8 +1,8 @@
 import React from 'react';
-import RandomTacoData from './components/RandomTacoData';
 import Footer from './components/Footer';
 // import ReactDOM from 'react-dom';
 import Nav from './components/Nav';
+import RandomTacoData from './components/RandomTacoData';
 
 function App() {
     return (
