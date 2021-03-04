@@ -18,12 +18,19 @@ nav {
             color: $orange;
         }
     }
+
+    .title {
+        font-family: $titleFont;
+        color: $blue;
+        text-shadow: $white 1px 1px 0px;
+        text-align: center;
+        font-size: 5rem;
+        letter-spacing: 0.4rem;
+    }
 }
 
-.title {
-    font-family: $titleFont;
-    color: $blue;
-    text-shadow: $white 1px 1px 0px;
-    font-size: 5rem;
-    letter-spacing: 0.4rem;
+@media (max-width: 480px) {
+    nav .title {
+        font-size: 3.3rem;
+    }
 }

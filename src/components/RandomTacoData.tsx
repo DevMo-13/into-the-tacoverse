@@ -42,7 +42,6 @@ function RandomTacoData() {
     const [tacoData, setTacoData] = useState<TacoResponse>({});
 
     const randomTacoURL = 'http://taco-randomizer.herokuapp.com/random/';
-
     const getRandomTaco = () => {
         axios
             .get(randomTacoURL)
