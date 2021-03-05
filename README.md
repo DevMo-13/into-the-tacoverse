@@ -8,3 +8,7 @@
 
 <p align='center'>Taco recipes app using React, TypeScript, Sass, and Public APIs.</p>
 <p align='center'>Still a work in progress!</p>
+
+---
+
+Utilized the [TacoFancy API](https://github.com/evz/tacofancy-api) for the Taco Loco section.
