@@ -11,5 +11,4 @@
 
 ---
 
-Utilized the [Spoonacular API](https://spoonacular.com/food-api) for the main taco recipes section.
-Utilized the [TacoFancy API](https://github.com/evz/tacofancy-api) for the taco loco section.
+Utilized the [Spoonacular API](https://spoonacular.com/food-api) for the main taco recipes section, and utilized the [TacoFancy API](https://github.com/evz/tacofancy-api) for the taco loco section.
