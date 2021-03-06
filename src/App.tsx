@@ -2,7 +2,8 @@ import React from 'react';
 import Footer from './components/Footer';
 // import ReactDOM from 'react-dom';
 import Nav from './components/Nav';
-import RandomTacoData from './components/RandomTacoData';
+import TacoLoco from './taco loco/TacoLoco';
+import TacoRecipes from './taco recipes/TacoRecipes';
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
             <div className="content">
                 <Nav />
                 <main>
-                    <RandomTacoData />
+                    <TacoRecipes />
+                    <TacoLoco />
                 </main>
                 <Footer />
             </div>

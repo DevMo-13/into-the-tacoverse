@@ -1,8 +1,8 @@
-// Component to fetch data for a random taco recipe
+// Component to fetch data for a random taco recipe from TacoFancy API
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import TacoLoco from './TacoLoco';
+import TacoLocoDetails from './TacoLocoDetails';
 
 interface TacoResponse {
     base_layer: {
@@ -37,7 +37,7 @@ interface TacoResponse {
     };
 }
 
-function RandomTacoData() {
+function TacoLoco() {
     // @ts-ignore
     const [tacoData, setTacoData] = useState<TacoResponse>({});
 
@@ -61,9 +61,9 @@ function RandomTacoData() {
 
     return (
         <>
-            <TacoLoco tacoData={tacoData} />
+            <TacoLocoDetails tacoData={tacoData} />
         </>
     );
 }
 
-export default RandomTacoData;
+export default TacoLoco;

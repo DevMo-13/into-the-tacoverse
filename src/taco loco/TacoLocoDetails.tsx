@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { RiFileList3Line } from 'react-icons/ri';
-import TacoImg from '../images/TacoImg';
+import TacoImg from './TacoImg';
 
 interface TacoResponse {
     base_layer: {
@@ -41,7 +41,7 @@ interface Props {
     tacoData: TacoResponse;
 }
 
-function TacoLoco({ tacoData }: Props) {
+function TacoLocoDetails({ tacoData }: Props) {
     return (
         <div className="tacoLoco">
             <div className="intro">
@@ -73,6 +73,7 @@ function TacoLoco({ tacoData }: Props) {
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="recipe"
+                                    className="iconLink"
                                 >
                                     <RiFileList3Line className="recipeIcon" />
                                 </a>
@@ -85,4 +86,4 @@ function TacoLoco({ tacoData }: Props) {
     );
 }
 
-export default TacoLoco;
+export default TacoLocoDetails;
