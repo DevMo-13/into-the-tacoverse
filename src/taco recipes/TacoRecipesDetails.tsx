@@ -93,15 +93,91 @@ interface RecipesResponse {
         imageType: string;
         title: string;
     };
+    15: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    16: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    17: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    18: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    19: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    20: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    21: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    22: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    23: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    24: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    25: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    26: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
 }
 
 interface Props {
     recipesData: RecipesResponse;
 }
 
-function recipesRecipesDetails({ recipesData }: Props) {
+function TacoRecipesDetails({ recipesData }: Props) {
     return (
         <div className="tacoRecipes">
+            <p className="recipesIntro">
+                Not really feeling loco? Then try one of these tried and true
+                taco recipes instead!
+            </p>
             <div className="recipes">
                 <ul className="recipesUl">
                     {Object.keys(recipesData).map((recipe: string) => (
@@ -130,4 +206,4 @@ function recipesRecipesDetails({ recipesData }: Props) {
     );
 }
 
-export default recipesRecipesDetails;
+export default TacoRecipesDetails;

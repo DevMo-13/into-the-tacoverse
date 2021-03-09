@@ -11,8 +11,8 @@ function App() {
             <div className="content">
                 <Nav />
                 <main>
-                    <TacoRecipes />
                     <TacoLoco />
+                    <TacoRecipes />
                 </main>
                 <Footer />
             </div>
