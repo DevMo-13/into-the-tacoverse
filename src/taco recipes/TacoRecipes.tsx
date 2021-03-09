@@ -95,6 +95,78 @@ interface RecipesResponse {
         imageType: string;
         title: string;
     };
+    15: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    16: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    17: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    18: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    19: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    20: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    21: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    22: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    23: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    24: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    25: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
+    26: {
+        id: number;
+        image: string;
+        imageType: string;
+        title: string;
+    };
 }
 
 function TacoRecipes() {
@@ -103,7 +175,7 @@ function TacoRecipes() {
 
     const apiKey = 'cb5a8afbcad84ed38d32829ab0be43b8';
 
-    const apiURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=taco&number=15`;
+    const apiURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=taco&number=27&offset=9`;
     const getRecipes = () => {
         axios
             .get(apiURL)

@@ -12,143 +12,144 @@
     box-shadow: $boxShadow;
     text-align: center;
     border-radius: 1%;
-}
 
-.intro {
-    font-family: $bodyFont;
-    color: $green;
-    font-size: 1.35rem;
-    width: 50%;
-    line-height: 25px;
-}
-
-#loco {
-    font-family: $titleFont;
-    color: $green;
-    font-size: 4rem;
-    letter-spacing: 0.1rem;
-}
-
-.tacoImg {
-    height: 175px;
-}
-
-.ingredientsUl {
-    align-self: center;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-column-gap: 10px;
-    justify-content: center;
-    padding-left: 0px;
-    margin: 0;
-}
-
-.ingredientLi {
-    list-style-type: none;
-    @include flexCenter(column);
-}
-
-.name {
-    font-family: $titleFont;
-    color: $red;
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
-    min-height: 100px;
-    max-width: 200px;
-    margin-bottom: 0;
-}
-
-.recipeIcon {
-    width: 50px;
-    height: 50px;
-    color: $orange;
-    margin-top: 5px;
-}
-
-.iconLink {
-    :hover {
-        color: $yellow;
+    .intro {
+        font-family: $bodyFont;
+        color: $green;
+        font-size: 1.35rem;
+        width: 50%;
+        line-height: 25px;
     }
-}
 
-@media (max-width: 1025px) {
+    #loco {
+        font-family: $titleFont;
+        color: $green;
+        font-size: 4rem;
+        letter-spacing: 0.1rem;
+    }
+
     .tacoImg {
-        height: 150px;
+        height: 175px;
     }
 
     .ingredientsUl {
         align-self: center;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-column-gap: 10px;
+        justify-content: center;
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    .ingredientLi {
+        list-style-type: none;
         @include flexCenter(column);
     }
 
-    .ingredientLi {
-        padding-bottom: 15px;
-    }
-
     .name {
-        min-height: 0px;
-    }
-}
-
-@media (max-width: 770px) {
-    .tacoLoco {
-        width: 75vw;
-        padding: 15px 15px 15px 15px;
-    }
-
-    .intro {
-        font-size: 1.3rem;
-    }
-
-    #loco {
-        font-size: 3rem;
-        line-height: 30px;
-    }
-
-    .tacoImg {
-        height: 150px;
-    }
-
-    .ingredientLi {
-        padding-bottom: 10px;
-    }
-
-    .name {
-        font-size: 1.9rem;
+        font-family: $titleFont;
+        color: $red;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        min-height: 100px;
+        max-width: 200px;
+        margin-bottom: 0;
     }
 
     .recipeIcon {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .tacoLoco {
-        padding: 10px 10px 10px 10px;
+        width: 50px;
+        height: 50px;
+        color: $orange;
+        margin-top: 5px;
     }
 
-    .intro {
-        font-size: 1.2rem;
-        line-height: 25px;
+    .iconLink {
+        :hover {
+            color: $yellow;
+        }
     }
 
-    #loco {
-        line-height: 25px;
+    @media (max-width: 1025px) {
+        .tacoImg {
+            height: 150px;
+        }
+
+        .ingredientsUl {
+            align-self: center;
+            @include flexCenter(column);
+        }
+
+        .ingredientLi {
+            padding-bottom: 15px;
+        }
+
+        .name {
+            min-height: 0px;
+        }
     }
 
-    .tacoImg {
-        height: 100px;
+    @media (max-width: 770px) {
+        .tacoLoco {
+            width: 75vw;
+            padding: 15px 15px 15px 15px;
+        }
+
+        .intro {
+            font-size: 1.3rem;
+            width: 75%;
+        }
+
+        #loco {
+            font-size: 3rem;
+            line-height: 30px;
+        }
+
+        .tacoImg {
+            height: 150px;
+        }
+
+        .ingredientLi {
+            padding-bottom: 10px;
+        }
+
+        .name {
+            font-size: 1.9rem;
+        }
+
+        .recipeIcon {
+            width: 40px;
+            height: 40px;
+        }
     }
 
-    .name {
-        font-size: 1.5rem;
-        min-width: 150px;
-        padding-bottom: 5px;
-    }
+    @media (max-width: 480px) {
+        .tacoLoco {
+            padding: 10px 10px 10px 10px;
+        }
 
-    .recipeIcon {
-        width: 30px;
-        height: 30px;
+        .intro {
+            font-size: 1.2rem;
+            line-height: 25px;
+        }
+
+        #loco {
+            line-height: 25px;
+        }
+
+        .tacoImg {
+            height: 100px;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            min-width: 150px;
+            padding-bottom: 5px;
+        }
+
+        .recipeIcon {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
