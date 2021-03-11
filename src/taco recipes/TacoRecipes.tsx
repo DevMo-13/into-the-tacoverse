@@ -1,8 +1,7 @@
-// Component to fetch taco recipes from Spoonacular API
+// Component to fetch taco recipes from Spoonacular API  and renders the recipes' info
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import TacoRecipesDetails from './TacoRecipesDetails';
 
 interface RecipesResponse {
     0: {
@@ -169,9 +168,10 @@ interface RecipesResponse {
     };
 }
 
+const tacoRecipesResponse: RecipesResponse[] = [];
+
 function TacoRecipes() {
-    // @ts-ignore
-    const [recipesData, setRecipesData] = useState<RecipesResponse>({});
+    const [recipesData, setRecipesData] = useState(tacoRecipesResponse);
 
     const apiKey = 'cb5a8afbcad84ed38d32829ab0be43b8';
 
@@ -194,10 +194,42 @@ function TacoRecipes() {
     }, []);
 
     return (
-        <>
-            {/* @ts-ignore */}
-            <TacoRecipesDetails recipesData={recipesData} />
-        </>
+        <div className="tacoRecipes">
+            <p className="recipesIntro">
+                Not really feeling loco? Then try one of these yummy taco
+                recipes instead!
+            </p>
+            <div className="recipes">
+                <ul className="recipesUl">
+                    {Object.keys(recipesData).map((recipe: string) => (
+                        <>
+                            <li
+                                // @ts-ignore
+                                key={recipesData[recipe].id}
+                                className="recipeLi"
+                            >
+                                <img
+                                    // @ts-ignore
+                                    src={recipesData[recipe].image}
+                                    alt="recipe pic"
+                                    className="recipePic"
+                                    // @ts-ignore
+                                    key={recipesData[recipe].image}
+                                />
+                                <p
+                                    className="recipeTitle"
+                                    // @ts-ignore
+                                    key={recipesData[recipe].title}
+                                >
+                                    {/*  @ts-ignore */}
+                                    {recipesData[recipe].title}
+                                </p>
+                            </li>
+                        </>
+                    ))}
+                </ul>
+            </div>
+        </div>
     );
 }
 
