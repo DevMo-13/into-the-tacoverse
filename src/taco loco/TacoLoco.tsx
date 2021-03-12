@@ -49,7 +49,7 @@ function TacoLoco() {
             .get<TacoResponse[]>(randomTacoURL)
             .then((response) => {
                 const taco = response.data;
-                console.log('test rando taco: ', taco);
+                console.log('rando taco: ', taco);
                 setTacoData(taco);
             })
             .catch((error) => {
