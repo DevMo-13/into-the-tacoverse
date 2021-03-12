@@ -175,10 +175,10 @@ function TacoRecipes() {
 
     const apiKey = 'cb5a8afbcad84ed38d32829ab0be43b8';
 
-    const apiURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=taco&number=27&offset=9`;
+    const apiSearchRecipes = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=taco&number=27&offset=9`;
     const getRecipes = () => {
         axios
-            .get(apiURL)
+            .get(apiSearchRecipes)
             .then((response) => {
                 const recipes = response.data.results;
                 console.log('recipes: ', recipes);
@@ -189,9 +189,26 @@ function TacoRecipes() {
             });
     };
 
+    // const apiGetRecipeURL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`;
+    // const getRecipeURL = () => {
+    //     axios
+    //         .get(apiGetRecipeURL)
+    //         .then((response) => {
+    //             const recipeURL = response.data.sourceUrl;
+    //             console.log('recipeURL: ', recipeURL);
+    //             // setRecipesData(recipes);
+    //         })
+    //         .catch((error) => {
+    //             console.log('Error fetching and parsing data', error);
+    //         });
+    // };
+
     useEffect(() => {
         getRecipes();
     }, []);
+    // useEffect(() => {
+    //     getRecipeURL();
+    // }, []);
 
     return (
         <div className="tacoRecipes">

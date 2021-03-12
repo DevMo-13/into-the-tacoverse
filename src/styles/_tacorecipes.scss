@@ -35,8 +35,9 @@
     }
 
     .recipePic {
-        border-radius: 2%;
-        border: 0.6rem solid #ffffff;
+        border-radius: 49%;
+        // border: 0.6rem solid #ffffff;
+        box-shadow: $boxShadow;
     }
 
     .recipeTitle {
